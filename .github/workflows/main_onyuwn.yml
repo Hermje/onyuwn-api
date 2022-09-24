@@ -11,7 +11,7 @@ on:
 
 env:
   AZURE_FUNCTIONAPP_PACKAGE_PATH: 'src/onyuwn-api/' # set this to the path to your web app project, defaults to the repository root
-  DOTNET_VERSION: '6.0.7' # set this to the dotnet version to use
+  DOTNET_VERSION: '3.x' # set this to the dotnet version to use
   APIKey: "XtD6o7bmpR2YYaMIlWKvCLQUWw4lrOvqA6WS1QAkbxrbAzFuTrbUrQ=="
 
 jobs:
