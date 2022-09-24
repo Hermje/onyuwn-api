@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using onyuwn_api.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace onyuwn_api.Configuration
         {
             string attempt = req.Headers.First(x => x.Key == "APIKey").Value;
             Console.WriteLine($"API KEY: {attempt}");
-            return onyuwn_api.Settings.Settings.ApiKey == attempt;
+            return AppSettings.ApiKey == attempt;
         }
     }
 }
